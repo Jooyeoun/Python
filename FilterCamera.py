@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 
 def cartoon_filter(img):
-    # 축소시켜서 작업한 후에 확대시키는 것이 속도 면에서 더 효과적이다.
     h, w = img.shape[:2]
     img2 = cv2.resize(img, (w//2, h//2))
 
